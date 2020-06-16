@@ -1,0 +1,25 @@
+h1.title {
+  font-family: Arial, Helvetica, sans-serif;
+  }
+.textfont {font-family: Arial, Helvetica, sans-serif;}
+#social-medias img{
+                border-radius: 8px;
+                margin-right: 4px;
+                width: 48px;
+            }
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  border-radius: 8px;
+}
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
