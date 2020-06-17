@@ -34,3 +34,8 @@ a:active {
         list-style-position: inside;
         font-family: Arial, Helvetica, sans-serif;
     }
+
+iframe {
+    border: none;
+    margin: 0;
+}
