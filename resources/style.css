@@ -41,6 +41,10 @@ iframe {
     position: fixed;
 }
 
+ body {
+    margin: 0;
+    }
+
 #header-space {
   height: 84px;
   width: 100%;
