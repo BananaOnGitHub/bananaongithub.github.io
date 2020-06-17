@@ -1,2 +1,2 @@
 # bananaongithub.github.io
-Hey, this is an attempt at making a website. Go check it out.
+Hey, this is my website! Go check it out.
