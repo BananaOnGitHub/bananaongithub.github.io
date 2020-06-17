@@ -38,4 +38,10 @@ a:active {
 iframe {
     border: none;
     margin: 0;
+    position: fixed;
+}
+
+#header-space {
+  height: 84px;
+  width: 100%;
 }
