@@ -1,0 +1,29 @@
+<package>
+	<id>love.litten.diary</id>
+	<name>Diary</name>
+	<version>1.2.2</version>
+	<compatibility>
+		<firmware>
+			<maxiOS>15.0</maxiOS>
+			<miniOS>13.0</miniOS>
+			<otherVersions>unconfirmed</otherVersions>
+			<!--
+			for otherVersions, you can put either unsupported or unconfirmed
+			-->
+		</firmware>
+	</compatibility>
+	<dependencies></dependencies>
+	<descriptionlist>
+		<description>Windows 10/11 lock screen replica. Made by Litten/Traurige. Requires iOS 13 and up.</description>
+	</descriptionlist>
+	<screenshots>
+		<image>img1.png</image>
+	</screenshots>
+	<changelog>
+		<change>1.2.2</change>
+	</changelog>
+	<links>
+		<name>Source Code</name>
+		<url>https://github.com/Traurige/Diary</url>
+	</links>
+</package>
