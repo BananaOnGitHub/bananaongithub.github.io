@@ -2,9 +2,9 @@ Architectures: iphoneos-arm
 Codename: CODENAME
 Components: main
 Date: Fri, 22 Jul 2022 18:29:35 +0000
-Description: DESCRIPTION
+Description: testing random tweaks and stuff
 Label: LABEL
-Origin: ORIGIN
+Origin: Banana's Repo
 Suite: stable
 Version: 1.0
 MD5Sum:
