@@ -16,24 +16,3 @@ Description: Dear diary..
 Name: Diary 📖
 Author: Litten
 
-Package: love.litten.libkitten
-Architecture: iphoneos-arm
-Version: 1.3.2
-Section: System
-Maintainer: Litten
-Installed-Size: 172
-Depends: firmware (>= 12.0)
-Filename: ./debians/love.litten.libkitten_1.3.2.deb
-Size: 9048
-MD5sum: 71caf3c997ea2abb52a2cd7f476e1fb7
-SHA1: df0989947f65f13648e671b2657d237b5bdce54e
-SHA256: 0ba79ca7e949d1b212f200e1ddaf0015cd2f8f9719e2fccfd33c1dcf408f0f94
-SHA512: 81b389ccf0cc7f98e5b1e5265228da13cb65ff4f0881b1cea35ddf460286148872587d199d4bf9b0f80e49c6cc255e06b256f4c9519556ea185187ed902aad21
-Description: Library to get three different colors from an image and detect if one is light or dark
-Tag: role::developer
-Name: libKitten 🐱
-Author: Litten
-Depiction: https://repo.litten.love/depictions/libKitten/index.html
-SileoDepiction: https://repo.litten.love/depictions/libKitten/index.json
-Icon: https://repo.litten.love/depictions/libKitten/assets/icon.png
-
