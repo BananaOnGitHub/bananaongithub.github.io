@@ -1,17 +1,18 @@
 Package: love.litten.diary
-Version: 1.2.2
 Architecture: iphoneos-arm
+Version: 1.2.2
+Section: Tweaks
 Maintainer: Litten
 Installed-Size: 5800
 Depends: mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.14), firmware (>= 13.0), com.mrgcgamer.libgcuniversal, com.peterdev.libpddokdo, love.litten.libkitten
 Conflicts: hi.my.name.is.ubik.kalm, com.peterdev.grupi, se.nosskirneh.properlockgestures
-Filename: debians/love.litten.diary_1.2.2_iphoneos-arm.deb
+Filename: ./debians/love.litten.diary_1.2.2_iphoneos-arm.deb
 Size: 2663444
 MD5sum: da8e87b06352fe8afbfa6421e19d0844
 SHA1: fe998f6d4ba1ebffdf7dbcd0721242b3a619c4a4
 SHA256: 133ae7176a09fc7b6f21b6dce053081e4a66fd3a3dad671af2fa74f3b573785f
-Section: Tweaks
+SHA512: d5631040efdb07de50c6e1ca376275bd325a2faa0d490924e0f7abf656d1377864e83a4333abda352637c24f35be4d83cd18ed2eaffc641fc2dd8e1dbf4effd3
 Description: Dear diary..
-Author: Litten
 Name: Diary 📖
+Author: Litten
 
