@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transfer/Create Windows Boot Manager on Other Disk - Banana's Website</title>
+<meta property="og:title" content="Transfer/Create Windows Boot Manager on Other Disk - Banana's Website" />
+<style>
+    body {
+  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 5px;
+  }
+
+  body > #content {
+    padding: 0px 20px 20px 20px !important;
+  }
+}
+
+body > #content {
+  margin: 0px;
+  max-width: 900px;
+  border: 1px solid #e1e4e8;
+  padding: 10px 40px;
+  padding-bottom: 20px;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  color: #bbb;
+  background-color: #bbb;
+  height: 1px;
+  flex: 0 1 auto;
+  margin: 1em 0;
+  padding: 0;
+  border: none;
+}
+
+/**
+ * Links
+ */
+a {
+  color: #0366d6;
+  text-decoration: none; }
+  a:visited {
+    color: #0366d6; }
+  a:hover {
+    color: #0366d6;
+    text-decoration: underline; }
+
+pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+/**
+  * Code blocks
+  */
+
+code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  word-wrap: break-word;
+  padding: .2em .4em;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+}
+
+pre > code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+  font-size: 100%;
+}
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  border-left-width: 3px;
+  padding: 0 1em;
+  color: #828282;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+}
+blockquote * {
+  font-style: normal !important;
+  letter-spacing: 0;
+  color: #6a737d !important;
+}
+
+/**
+ * Tables
+ */
+table {
+  border-spacing: 2px;
+  display: block;
+  font-size: 14px;
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 16px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+th {
+  font-weight: 600;
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+/**
+ * Others
+ */
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #24292e; }
+
+ul {
+  margin-top: 0; }
+
+li {
+  color: #24292e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; }
+
+li + li {
+  margin-top: 0.25em; }
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #24292e; }
+
+a:visited {
+  color: #0366d6; }
+
+h1, h2, h3 {
+  border-bottom: 1px solid #eaecef;
+  color: #111;
+  /* Darker */ }
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WN50K333P9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WN50K333P9');
+</script>
+</head>
+<h1 id="transfer-create-windows-boot-manager-on-other-disk">Transfer/Create Windows Boot Manager on Other Disk</h1>
+<p>Have you ever run into the problem where the Windows Installer was stupid, and it installed your actual Windows installation on your main drive/SSD, but it installed the boot manager on to another HDD/SSD, and without that other drive, Windows won&#39;t boot?
+<br>Some guides say to save all the files that you can and reinstall Windows. <strong>No.</strong> This is <em>not the solution</em>. You don&#39;t need to reinstall windows to transfer the bootloader to your main drive.</p>
+<h4 id="simply-follow-the-steps-below-">Simply follow the steps below:</h4>
+<ol>
+<li>Go to Windows Search and find <code>&quot;Create and format hard disk partitions&quot;</code> and open it. This will open Control Panel, where you can edit disk partitions.</li>
+<li>Next, go to your <code>C:</code> drive and see if your drive has unallocated space (it has a black bar above it).<ol>
+<li>If it doesn&#39;t<ol>
+<li>Right click on the main <code>C:</code> NTFS Partition and click <code>Shrink Volume...</code></li>
+<li>Before continuing, <ins>make sure you have enough space on the main partition. Don&#39;t get your files deleted!</ins></li>
+<li>In the editable box <code>Enter the amount of space to shrink in MB</code>, shrink the partition by 100-200 MB. You can choose what you&#39;d like.</li>
+<li>You should now see some unallocated space with a black bar above it. Right click it and click <code>New Simple Volume...</code>. Don&#39;t change any of the settings, make the partition take up all the unallocated space.</li>
+<li>Then, give the partition a drive letter, preferably one that&#39;s high in the alphabet so it&#39;s unlikely to be picked up and used by software or confused. Don&#39;t worry, we&#39;ll delete the drive letter later.</li>
+<li>Format the partition as <code>FAT32</code> and change the label to UEFI or EFI. Click <code>Next &gt;</code> and <code>Finish</code>, and the partition will be created.</li>
+</ol>
+</li>
+<li>If it does<ol>
+<li>Great! Right click the unallocated space (with a black bar above it) and click <code>New Simple Volume...</code> Make the partition take up about 100-200 MB. You can choose what you&#39;d like.</li>
+<li>Then, give the partition a drive letter, preferably one that&#39;s high in the alphabet so it&#39;s unlikely to be picked up and used by software or confused. Don&#39;t worry, we&#39;ll delete the drive letter later.</li>
+<li>Format the partition as <code>FAT32</code> and change the label to UEFI or EFI. Click <code>Next &gt;</code> and <code>Finish</code>, and the partition will be created.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Alright, we&#39;ve got an EFI partition! Now, run Command Prompt as an Administrator.</li>
+<li>Type in
+<code>bcdboot C:\windows /s (your drive letter here):</code>
+<br><img src="https://raw.githubusercontent.com/BananaOnGitHub/transfer-windows-boot-manager/main/bcdbootcmd.png" alt="" title="cmd screenshot"><br><strong>Make sure you include the : at the end!</strong></li>
+<li>It should say <code>Boot files successfully created.</code> Shut down, unplug the drive that the old Windows Boot Manager was on, and power on to see if it works. If it does, <em>that&#39;s it!</em> You&#39;ve created a new EFI boot partition on your main drive. You can now safely remove the other drive.
+<br><br>Finally, to unmount the drive from Windows:<ol>
+<li>Open <code>&quot;Create and format hard disk partitions&quot;</code> again</li>
+<li>Right click the EFI partition and click <code>Change Drive Letter and Paths...</code></li>
+<li>Remove the drive letter and click OK.<h3 id="that-s-it-you-re-all-done-">That&#39;s it! You&#39;re all done.</h3>
+</li>
+</ol>
+</li>
+</ol>
+<center>
+<br><br><br><br><br><br>go <a href="https://bananaplays.com">home</a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>yes i used markdown for this page because i&#39;m lazy and it looks nice
+</center>
+</body>
+</html>
