@@ -227,18 +227,31 @@ h1, h2, h3 {
 <li>Alright, we&#39;ve got an EFI partition! Now, run Command Prompt as an Administrator.</li>
 <li>Type in
 <code>bcdboot C:\windows /s (your drive letter here):</code>
-<br><img src="https://raw.githubusercontent.com/BananaOnGitHub/transfer-windows-boot-manager/main/bcdbootcmd.png" alt="" title="cmd screenshot"><br><strong>Make sure you include the : at the end!</strong></li>
-<li>It should say <code>Boot files successfully created.</code> Shut down, unplug the drive that the old Windows Boot Manager was on, and power on to see if it works. If it does, <em>that&#39;s it!</em> You&#39;ve created a new EFI boot partition on your main drive. You can now safely remove the other drive.
-<br><br>Finally, to unmount the drive from Windows:<ol>
+<br><img src="bcdbootcmd.png" alt="" title="cmd screenshot"><br><strong>Make sure you include the : at the end!</strong></li>
+<li>It should say <code>Boot files successfully created.</code> If it does, great! But we&#39;re not finished yet.</li>
+<li>Unmount the drive from Windows:<ol>
 <li>Open <code>&quot;Create and format hard disk partitions&quot;</code> again</li>
 <li>Right click the EFI partition and click <code>Change Drive Letter and Paths...</code></li>
-<li>Remove the drive letter and click OK.<h3 id="that-s-it-you-re-all-done-">That&#39;s it! You&#39;re all done.</h3>
-</li>
+<li>Remove the drive letter and click OK.
+<br></li>
 </ol>
 </li>
+<li>In Command Prompt, open diskpart by simply running <code>diskpart</code></li>
+<li>Type in <code>list disk</code> and select your boot disk by then typing in <code>select disk=(disk number here)</code></li>
+<li>Type in <code>list partition</code> and select the EFI partition (which should be 100-200MB, check in &quot;Create and format hard disk partitions&quot; for verification if needed) by typing in <code>select partition=(partition number here)</code></li>
+<li>Pay attention to this one. Type in <code>SET ID=c12a7328-f81f-11d2-ba4b-00a0c93ec93b</code><ol>
+<li>If &quot;Create and format disk partitions&quot; is open, then you should see the partition name disappear.</li>
 </ol>
+</li>
+<li>Run <code>list partition</code> again to make sure your partition is now labeled as a &quot;<code>System</code>&quot; partition type.<ol>
+<li>If so, great!</li>
+</ol>
+</li>
+<li>Finally, shut down, unplug the drive that the old Windows Boot Manager was on, and power on to see if it boots.  If it does, <em>that&#39;s it!</em> You&#39;ve created a new EFI boot partition on your main drive. You can now safely remove the other drive.</li>
+</ol>
+<h3 id="that-s-it-you-re-all-done-">That&#39;s it! You&#39;re all done.</h3>
 <center>
-<br><br><br><br><br><br>go <a href="https://bananaplays.com">home</a>
+<br><br><br><br><br><br>go to <a href="https://bananaplays.com">my website</a>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>yes i used markdown for this page because i&#39;m lazy and it looks nice
 </center>
 </body>
