@@ -199,6 +199,13 @@ h1, h2, h3 {
 
   gtag('config', 'G-WN50K333P9');
 </script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
 </head>
 <h1 id="transfer-create-windows-boot-manager-on-other-disk">Transfer/Create Windows Boot Manager on Other Disk</h1>
 <p>Have you ever run into the problem where the Windows Installer was stupid, and it installed your actual Windows installation on your main drive/SSD, but it installed the boot manager on to another HDD/SSD, and without that other drive, Windows won&#39;t boot?
