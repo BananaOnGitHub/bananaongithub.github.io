@@ -1,39 +1,38 @@
+Package: dev.traurige.libkitten
+Architecture: iphoneos-arm
+Version: 1.4
+Section: System
+Maintainer: Traurige
+Installed-Size: 172
+Provides: love.litten.libkitten (=1.3.3)
+Depends: firmware (>= 12.0)
+Conflicts: love.litten.libkitten
+Filename: ./pool/dev.traurige.libkitten_1.4_iphoneos-arm.deb
+Size: 8986
+MD5sum: d205a5709dad254c7786e08c347b61a7
+SHA1: 3ab2df93e3099812a2364bbbf032c83cf4ea9a5c
+SHA256: 7613d2aeb7e7471394747760990043d15e0ded5723b3f559c74005929780f701
+SHA512: d5a404a2855717a9b7cf4b8724fe4996659dd2526ecbdaed5a96e4bef5c13781e30a7671bde29e394ca295d83a200571e89962bca8c6b8ba82f2ac3d7d5d8c87
+Description: Collection of image and color calculations
+Tag: role::developer
+Name: libKitten
+Author: Traurige
+
 Package: love.litten.diary
 Architecture: iphoneos-arm
 Version: 1.2.2
 Section: Tweaks
 Maintainer: Litten
 Installed-Size: 5800
-Depends: mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.14), firmware (>= 13.0), com.mrgcgamer.libgcuniversal, com.peterdev.libpddokdo, org.mr.libkitten
+Depends: mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.14), firmware (>= 13.0), com.mrgcgamer.libgcuniversal, com.peterdev.libpddokdo, love.litten.libkitten
 Conflicts: hi.my.name.is.ubik.kalm, com.peterdev.grupi, se.nosskirneh.properlockgestures
 Filename: ./pool/love.litten.diary_1.2.2_iphoneos-arm.deb
-Size: 2711524
-MD5sum: f7b9fd1f1c377e1476f0acdd637f6470
-SHA1: 319bc41cae8aa2c408a066b6e097a4917f2c857e
-SHA256: c25c1f4ce34cedecfe3c19c9983cef7985ef3996a0671cf9a562666ba6286e3c
-SHA512: fefe10cb358e863d673cb9ef960e32f6f08ce1b97da533872e6987930efccdb83359dd8522fd3cfef2b6ffd4d783bc6720a0ecf7792925bb74f6dc5bd54b148e
+Size: 2663444
+MD5sum: da8e87b06352fe8afbfa6421e19d0844
+SHA1: fe998f6d4ba1ebffdf7dbcd0721242b3a619c4a4
+SHA256: 133ae7176a09fc7b6f21b6dce053081e4a66fd3a3dad671af2fa74f3b573785f
+SHA512: d5631040efdb07de50c6e1ca376275bd325a2faa0d490924e0f7abf656d1377864e83a4333abda352637c24f35be4d83cd18ed2eaffc641fc2dd8e1dbf4effd3
 Description: Dear diary..
 Name: Diary 📖
 Author: Litten
-
-Package: love.litten.libkitten
-Architecture: iphoneos-arm
-Version: 1.3.2
-Section: System
-Maintainer: Litten
-Installed-Size: 172
-Depends: firmware (>= 12.0)
-Filename: ./pool/love.litten.libkitten_1.3.2.deb
-Size: 9048
-MD5sum: 71caf3c997ea2abb52a2cd7f476e1fb7
-SHA1: df0989947f65f13648e671b2657d237b5bdce54e
-SHA256: 0ba79ca7e949d1b212f200e1ddaf0015cd2f8f9719e2fccfd33c1dcf408f0f94
-SHA512: 81b389ccf0cc7f98e5b1e5265228da13cb65ff4f0881b1cea35ddf460286148872587d199d4bf9b0f80e49c6cc255e06b256f4c9519556ea185187ed902aad21
-Description: Library to get three different colors from an image and detect if one is light or dark
-Tag: role::developer
-Name: libKitten 🐱
-Author: Litten
-Depiction: https://repo.litten.love/depictions/libKitten/index.html
-SileoDepiction: https://repo.litten.love/depictions/libKitten/index.json
-Icon: https://repo.litten.love/depictions/libKitten/assets/icon.png
 
