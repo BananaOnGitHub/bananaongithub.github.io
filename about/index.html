@@ -11,6 +11,71 @@
   }
   window.addEventListener('load', addDarkmodeWidget);
 </script>
+<style>
+  .tooltip {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position above */
+  left: 50%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.95em;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Add to your CSS */
+.highlight {
+  background-color: #f6e101d8;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.tooltip:hover .highlight {
+  background-color: #ffd43b;
+}
+
+.about-list,
+.about-list ul {
+  list-style-type: disc;
+  padding-left: 1.4em;
+  margin-bottom: 0.3em;
+}
+
+.about-list > li {
+  margin-bottom: 0.5em;
+}
+
+.about-list ul {
+  list-style-type: circle;
+}
+
+.about-list ul ul {
+  list-style-type: square;
+}
+
+.about-list li {
+  font-size: 1em;
+  line-height: 1.3;
+}
+</style>
 </head>
 <body>
      <iframe id="iframe-header" src="https://bananaplays.com/resources/navbar/navbar.html" seamless width="100%"></iframe>
@@ -18,7 +83,28 @@
 <img src="https://bananaplays.com/resources/images/bananer.jpg" alt="background img" width="1280" class="center"/>
 <center>
 <h1 class="title">About</h1>
-<p class="textfont">Hi there, I'm Banana! I love playing games and editing videos. I play a lot of games, Roblox, Minecraft, and a ton of others.</p>
+<p class="textfont">Hi there, I'm Banana<span class="tooltip"><span class="highlight">(s)</span>
+  <span class="tooltiptext">You can choose to use plural or not.</span>
+</span>!<br><br>Here's some stuff about me:</p>
+<ul style="line-height:130%", class="about-list">
+  <li>I have Asperger's and OCD</li>
+  <li>Interests:</li>
+  <ul>
+    <li>All Tech</li>
+    <li>Cars</li>
+    <li><span class="tooltip"><span class="highlight">Gaming</span>
+      <span class="tooltiptext">I play a lot of games, but just a few of my favorites are: <ul>
+        <li>Roblox</li>
+        <li>Forza Horizon</li>
+        <li>BeamNG.drive</li>
+        <li>Minecraft</li>
+      </ul>
+      </span>
+    </span></li>
+    <li>Video Editing</li>
+    <li>Music and Music Editing</li>
+    </ul>
+</ul>
     
 </center>
 </body>
